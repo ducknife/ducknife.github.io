@@ -453,7 +453,7 @@ li{
     }
     .member-info{
         width: 160px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .member-item > img{
         object-fit: cover;
@@ -558,7 +558,7 @@ li{
     }
     .member-info{
         width: 140px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .member-item > img{
         object-fit: cover;
@@ -655,7 +655,7 @@ li{
         width: 140px;
     }
     .leader-item > .card > .member-info{
-        font-size: 12px;
+        font-size: 8px;
         width: 140px;
     }
     .member-info{
@@ -753,7 +753,7 @@ li{
     }
     .member-info{
         width: 140px;
-        font-size: 12px;
+        font-size: 8px;
     }
     .member-item > img{
         height: 240px;
