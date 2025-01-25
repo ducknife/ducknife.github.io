@@ -1,0 +1,116 @@
+.section-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 40%;
+}
+.form{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.form-title{
+    color: #BC2626;
+}
+.form-area{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px #aba3a3;
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+}
+.form-area a{
+    color: #BC2626;
+    text-decoration: none;
+}
+.form-area a:hover{
+    text-decoration: underline;
+}
+.feild-1 input{
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 300px;
+    outline: none;
+    border: none;
+    background-color: #F6FCFF;
+    box-shadow: 0px 4px 8px #ebebeb;
+    border-radius: 15px;
+}
+.feild-1 input:hover{
+    background-color: #BC2626;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.feild-1 input:not(:hover){
+    transition: all 0.5s;
+}
+.feild-1 input:hover::placeholder{
+    color: white;
+}
+.field-2{
+    display: flex;
+    accent-color: #BC2626;
+    width: 300px;
+    justify-content: space-between;
+}
+.field-2 .checkbox{
+    transform: scale(1.1);
+}
+.feild-3 .submit-button{
+    background-color: #051A53;
+    border: none;
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+.feild-3 .submit-button:hover{
+    transition: all 0.5s ease;
+    background-color: #BC2626;
+}
+.field-4{
+    margin-top: 10px;
+}
+.other-login{
+    display: flex;
+    flex-direction: column;
+}
+.other-login button{
+    text-align: left;
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 300px;
+}
+.login-by-desc{
+    margin: 10px;
+}
+.other-login button:first-child{
+    background-color: #1AB35A;
+}
+.other-login button:nth-child(2){
+    background-color: #0866FF;
+}
+.other-login button:hover{
+    transition: all 0.5s;
+    background-color: #BC2626;
+}
+.other-login button:not(:hover){
+    transition: all 0.5s;
+}
+.register-desc{
+    text-align: center;
+}

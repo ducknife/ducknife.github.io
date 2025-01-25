@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body{
+    font-family: 'Manrope';
+    background-color: #BC2626;
+}
+* {
+    box-sizing: border-box;
+}
+.container-fluid{
+    padding: 0px;   
+}
+.menu{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.item-left{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.item-middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.item-middle a{
+    color: white;
+    text-decoration: none;
+}
+.item-right{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+.header{
+    background-color: white; 
+    display: flex;
+    align-items: center;
+}
+.header a{
+    text-decoration: none;
+    color: #051A53;
+}
+.logo-title{
+    display: flex;
+    align-items: center;
+}
+.text{
+    text-align: left;
+}
+.pages{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hidden-list{
+    display: none;
+}
+.menu-option:hover .hidden-list{
+    display: block;
+    background-color: white;
+    box-shadow: 0px 4px 8px #ebebeb;
+    padding: 0px;
+    list-style-type: none;
+    position: absolute;
+}
+.hidden-item{
+    margin: 10px;
+}
+.hidden-item:hover{
+    color: #BC2626;
+    background-color: #f8f8f8;
+}
+.section-1{
+    background-color: #F6FCFF;
+}
+.section-2{
+    background-color: #F6FCFF;
+}

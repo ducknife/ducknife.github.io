@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A* SQUAD</title>
+    <link class="icon-title" rel="icon" href="assets/image/logo/logo.png">
+<!--     <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- start menu-bar -->
+    <div class="menu-bar">
+        <div class="search-box">
+            <label for="searchin4">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search-hidden" placeholder="Tìm kiếm">
+            </label>
+            <input type="text" class="search" id="searchin4" placeholder="Tìm kiếm">
+        </div>
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="gioithieu.html">Giới thiệu</a>
+                </li>
+                <li class="menu-item">
+                    <a href="diendan.html">Diễn đàn</a>
+                </li>
+                <li class="menu-item">
+                    <a href="nghiencuu.html">Nghiên cứu</a>
+                </li>
+                <li class="menu-item">
+                    <a href="recruitment.html"> Tuyển dụng</a>
+                </li>
+                <li class="menu-item">
+                    <a href="daotao.html">Đào tạo</a>
+                </li>
+                <li class="menu-item">
+                    <a href="login.html">Đăng nhập</a>
+                    <!-- <a href="logout.html">Đăng xuất</a> -->
+                </li>
+            </ul>
+        </div>
+        <div class="contact">
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <a href="email.html">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a href="youtube.html">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a href="facebook.html">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a href="instagram.html">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a href="tiktok.html">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="alt-contact-icon">
+            <i class="fa-solid fa-address-book"></i>
+        </div>
+    </div>
+    <!-- end-menu-bar -->
+    <div class="header">
+        <div class="logo-title">
+            <a href="index.html">
+                <img class="header-img" src="assets/image/logo/logo-square.png" alt="A* SQUAD - đồng hành trên mọi bước đi">
+            </a>
+            <div class="title">A* SQUAD STUDY GROUP
+                <p class="slogan">Chúng tôi luôn tìm đường đi ngắn nhất đến A<sup>+</sup></p>
+            </div>
+        </div>
+        <div class="bar"><i class="fa-solid fa-bars" style="color: #bc2626;"></i></div>
+        <ul class="header-menu-list">
+            <li class="home">
+                <a href="index.html">Trang chủ</a>
+            </li>
+            <li class="document">
+                <a href="#">Tài liệu</a> <i class="fa-solid fa-caret-down" style="color: #bc2626;"></i>
+                <ul class="document-list">
+                    <li class="dcm-item">Ngôn ngữ lập trình</li>
+                    <li class="dcm-item">Lập trình web</li>
+                    <li class="dcm-item">Phát triển phần mềm</li>
+                    <li class="dcm-item">Trí tuệ nhân tạo</li>
+                </ul>
+            </li>
+            <li class="contribute">
+                <a href="#">Đóng góp</a> <i class="fa-solid fa-caret-down" style="color: #bc2626;"></i>
+                <ul class="ctrb-list">
+                    <li class="ctrb-item">Tài liệu học tập</li>
+                    <li class="ctrb-item">Nghiên cứu khoa học</li>
+                    <li class="ctrb-item">Tối ưu thuật toán</li>
+                </ul>
+            </li>
+            <li class="teach">
+                <a href="#">Tham gia giảng dạy</a> <i class="fa-solid fa-caret-down" style="color: #bc2626;"></i>
+                <ul class="subject-list">
+                    <li class="sj-list">Nhập môn trí tuệ nhân tạo</li>
+                    <li class="sj-list">Nhập môn công nghệ phần mềm</li>
+                    <li class="sj-list">Lập trình web</li>
+                    <li class="sj-list">Ngôn ngữ lập trình</li>
+                </ul>
+            </li>
+            <li class="archivement">
+                <a href="#">Thành tựu</a> <i class="fa-solid fa-caret-down" style="color: #bc2626;"></i>
+                <ul class="arch-list">
+                    <li class="arch-item">Trí tuệ nhân tạo</li>
+                    <li class="arch-item">Kỹ thuật phần mềm</li>
+                    <li class="arch-item">Big data</li>
+                    <li class="arch-item">Điện toán đám mây</li>
+                    <li class="arch-item">Khoa học dữ liệu</li>
+                </ul>
+            </li>
+            <li class="info">
+                <a href="#">Thông tin cá nhân</a> <i class="fa-solid fa-caret-down" style="color: #bc2626;"></i>
+                <ul class="info">
+                    <li class="info-item">Thông tin cơ bản</li>
+                    <li class="info-item">Thành tích nổi bật</li>
+                    <li class="info-item">Đóng góp cá nhân</li>
+                    <li class="info-item">Nhật kí hoạt động</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- end header -->
+     <!-- start section-1 -->
+    <div class="section-1">
+        <h2 class="about-us">Về chúng tôi</h2>
+        <div class="hidden-section"> 
+            A* SQUAD là một cộng đồng học tập được thành lập dựa trên tiền thân là STUDY V1, với mục tiêu ban đầu là hỗ trợ các thành viên đạt kết quả cao trong các kỳ thi kết thúc học phần. Qua thời gian, nhóm đã phát triển thành một tổ chức có định hướng rõ ràng và mục tiêu toàn diện hơn, không chỉ giúp các thành viên tự tin chinh phục các kỳ thi cuối kỳ mà còn hỗ trợ nhau trong suốt quá trình học tập.  
+            Chúng tôi cam kết xây dựng một môi trường học tập hiệu quả và chủ động. Các thành viên trong nhóm tích cực tìm kiếm, chia sẻ tài liệu và phương pháp học tập hữu ích, giúp mọi người không chỉ đạt điểm số cao mà còn nắm vững kiến thức, tạo nền tảng vững chắc cho sự phát triển lâu dài.  
+            Ngoài ra, A* SQUAD không chỉ dừng lại ở việc ôn thi mà còn chú trọng vào việc giảm áp lực học tập bằng cách hỗ trợ các thành viên đạt được kết quả ổn định trong cả kỳ học. Định hướng của chúng tôi là tạo ra một cộng đồng hỗ trợ lẫn nhau, nơi mỗi thành viên đều có cơ hội phát triển bản thân và góp phần vào sự thành công chung của cả nhóm.
+        </div>
+        <h2 class="member-list">Danh sách thành viên</h2>
+        <!-- leader -->
+        <ul class="leader">
+            <li class="leader-item">
+                <img src="assets/image/item/study.png">
+            </li>
+            <li class="leader-item">
+                <div class="card">
+                    <p class="name">NGUYỄN QUANG CHIẾN</p>
+                    <img src="assets/image/member/LEADER.jpg" alt="Nguyễn Quang Chiến">
+                    <p class="member-info">Là thành viên câu lạc bộ IT PTIT, sinh viên đạt học bổng suất xắc nhiều kì liên tiếp, đồng thời là founder kiêm leader của
+                        A* SQUAD
+                    </p>
+                    <p class="position">LEADER</p>
+                </div>
+            </li>
+        </ul>
+        <!-- cofounder -->
+        <ul class="cofounder-list">
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">NGUYỄN VĂN HÙNG</p>
+                    <img src="assets/image/member/VanHung.jpg" alt="Nguyễn Văn Hùng">
+                    <p class="member-info">Là thành viên nhóm quản lí của A* SQUAD, từng tham gia giảng dạy môn Pháp luật đại cương và C++
+                    </p>
+                    <p class="position">CO-MANAGER</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">NGUYỄN TUẤN ANH</p>
+                    <img src="assets/image/member/TuanAnh.jpg" alt="Nguyễn Tuấn Anh">
+                    <p class="member-info">Là thành viên quản lí của A* SQUAD, từng tham gia giảng dạy môn Kỹ thuật số và Xử lí tín hiệu số
+                    </p>
+                    <p class="position">CO-MANAGER</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">NGUYỄN THỊ YẾN VY</p>
+                    <img src="assets/image/member/YenVy.jpg" alt="Nguyễn Thi Yến Vy">
+                    <p class="member-info">Là thành viên quản lí của A* SQUAD, từng tham gia giảng dạy môn Kinh tế chính trị và Chủ nghĩa
+                        xã hội khoa học
+                    </p>
+                    <p class="position">CO-MANAGER</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <img src="assets/image/item/work.png" alt="dai_dien2">
+            </li>
+        </ul>
+        <!-- other member -->
+        <ul class="member-list-1"> <!-- row-1 -->
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">PHẠM DUY CƯỜNG</p>
+                    <img src="assets/image/member/DuyCuong.jpg" alt="Phạm Duy Cường">
+                    <p class="member-info">Là thành viên nhóm quản lí của A* SQUAD, từng tham gia giảng dạy môn Pháp luật đại cương và C++
+                    </p>
+                    <p class="position">MEMBER</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">HOÀNG MẠNH CƯỜNG</p>
+                    <img src="assets/image/member/HoangCuong.jpg" alt="Hoàng Mạnh Cường">
+                    <p class="member-info">Là thành viên quản lí của A* SQUAD, từng tham gia giảng dạy môn Kỹ thuật số và Xử lí tín hiệu số
+                    </p>
+                    <p class="position">MEMBER</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">PHẠM ĐỨC TUẤN</p>
+                    <img src="assets/image/member/DucTuan.jpg" alt="Phạm Đức Tuấn">
+                    <p class="member-info">Là thành viên quản lí của A* SQUAD, từng tham gia giảng dạy môn Kinh tế chính trị và Chủ nghĩa
+                        xã hội khoa học
+                    </p>
+                    <p class="position">MEMBER</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">PHẠM CÔNG HỒNG QUÂN</p>
+                    <img src="assets/image/member/HongQuan.jpg" alt="Phạm Công Hồng Quân">
+                    <p class="member-info">Là thành viên quản lí của A* SQUAD, từng tham gia giảng dạy môn Kinh tế chính trị và Chủ nghĩa
+                        xã hội khoa học
+                    </p>
+                    <p class="position">MEMBER</p>
+                </div>
+            </li>
+        </ul>
+            <!-- end row-1 -->
+        <ul class="member-list-2"> <!-- row-2 -->
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">HOÀNG XUÂN VINH</p>
+                    <img src="assets/image/member/XuanVinh.jpg" alt="Hoàng Xuân Vinh">
+                    <p class="member-info">Là thành viên nhóm quản lí của A* SQUAD, từng tham gia giảng dạy môn Pháp luật đại cương và C++
+                    </p>
+                    <p class="position">MEMBER</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">TRẦN VĂN TRỌNG</p>
+                    <img src="assets/image/member/TranTrong.jpg" alt="Trần Văn Trọng">
+                    <p class="member-info">Là thành viên quản lí của A* SQUAD, từng tham gia giảng dạy môn Kỹ thuật số và Xử lí tín hiệu số
+                    </p>
+                    <p class="position">MEMBER</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">NGUYỄN ĐẠI NGHĨA</p>
+                    <img src="assets/image/member/NguyenNghia.jpg" alt="Nguyễn Đại Nghĩa">
+                    <p class="member-info">Là thành viên quản lí của A* SQUAD, từng tham gia giảng dạy môn Kinh tế chính trị và Chủ nghĩa
+                        xã hội khoa học
+                    </p>
+                    <p class="position">MEMBER</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">PHẠM QUANG TOẢN</p>
+                    <img src="assets/image/member/QuangToan.jpg" alt="Phạm Quang Toản">
+                    <p class="member-info">Là thành viên quản lí của A* SQUAD, từng tham gia giảng dạy môn Kinh tế chính trị và Chủ nghĩa
+                        xã hội khoa học
+                    </p>
+                    <p class="position">MEMBER</p>
+                </div>
+            </li>
+            <!-- end row-2 -->
+        </ul>
+        <!-- row-3 -->
+        <ul class="member-list-3">
+            <li class="member-item">
+                <img src="assets/image/item/employee.png" alt="dai_dien3">
+            </li>
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">VŨ THÙY DUNG</p>
+                    <img src="assets/image/member/ThuyDung.jpg" alt="Vũ Thùy Dung">
+                    <p class="member-info">Là thành viên quản lí của A* SQUAD, từng tham gia giảng dạy môn Kỹ thuật số và Xử lí tín hiệu số
+                    </p>
+                    <p class="position">MEMBER</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">ĐỖ THỊ THU HUẾ</p>
+                    <img src="assets/image/member/ThuHue.jpg" alt="Đỗ Thị Thu Huế">
+                    <p class="member-info">Là thành viên quản lí của A* SQUAD, từng tham gia giảng dạy môn Kinh tế chính trị và Chủ nghĩa
+                        xã hội khoa học
+                    </p>
+                    <p class="position">MEMBER</p>
+                </div>
+            </li>
+            <li class="member-item">
+                <div class="card">
+                    <p class="name">ĐỖ THỊ DIỆU LINH</p>
+                    <img src="assets/image/member/DieuLinh.jpg" alt="Đỗ Thị Diệu Linh">
+                    <p class="member-info">Là thành viên quản lí của A* SQUAD, từng tham gia giảng dạy môn Kinh tế chính trị và Chủ nghĩa
+                        xã hội khoa học
+                    </p>
+                    <p class="position">MEMBER</p>
+                </div>
+            </li>
+            <!-- end row-3 -->
+        </ul>
+    </div>
+    <h1 class="why-us">
+        Tại sao bạn nên đồng hành cùng chúng tôi?
+    </h1>
+    <!-- end section-1 -->
+    <div class="section-2">
+        <!-- <div class="container-fluid">
+            <img class="img-fluid" src="/Project-3/assets/image/background/bg.jpg" alt="bg-st-2">
+        </div> -->
+        <img src="assets/image/item/whyus.png" alt="why_us">
+        <div class="explain">
+            <div class="inner-box">
+                <div class="inner-img">
+                    <img class="inner-icon" src="assets/image/item/book.png" alt="icon-1">
+                </div>
+                <div class="inner-text">
+                    <h3 class="inner-title">Hỗ trợ tài liệu học tập miễn phí</h3>
+                    <p class="inner-desc">Bạn sẽ có nguồn tài liệu học tập khổng lồ khi tham gia cùng chùng tôi và chúng hoàn toàn miễn phí</p>
+                </div>
+            </div>
+            <div class="inner-box">
+                <div class="inner-img">
+                    <img class="inner-icon" src="assets/image/item/pc.png" alt="icon-2">
+                </div>
+                <div class="inner-text">
+                    <h3 class="inner-title">Cung cấp nhiều kỹ năng quan trọng</h3>
+                    <p class="inner-desc">Bạn sẽ có nguồn tài liệu học tập khổng lồ khi tham gia cùng chùng tôi và chúng hoàn toàn miễn phí</p>
+                </div>
+            </div>
+            <div class="inner-box">
+                <div class="inner-img">
+                    <img class="inner-icon" src="assets/image/item/roadmap.png" alt="icon-3">
+                </div>
+                <div class="inner-text">
+                    <h3 class="inner-title">Xây dựng lộ trình vững chắc</h3>
+                    <p class="inner-desc">Bạn sẽ có nguồn tài liệu học tập khổng lồ khi tham gia cùng chùng tôi và chúng hoàn toàn miễn phí</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="">FOOTER</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
