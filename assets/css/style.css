@@ -651,8 +651,8 @@ li{
         width: 210px;
     }
     .leader-item > .card > img{
-        height: 140px;
-        width: 140px;
+        height: 120px;
+        width: 120px;
     }
     .leader-item > .card > .member-info{
         font-size: 8px;
@@ -753,6 +753,9 @@ li{
     }
     .member-info{
         width: 140px;
+        font-size: 8px;
+    }
+    .leader-item > .card .member-info{
         font-size: 8px;
     }
     .member-item > img{
