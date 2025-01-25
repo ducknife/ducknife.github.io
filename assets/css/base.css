@@ -31,7 +31,6 @@ body{
     text-decoration: none;
 }
 .item-right{
-
     display: flex;
     align-items: center;
     justify-content: space-evenly;
