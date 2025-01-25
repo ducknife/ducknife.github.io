@@ -591,8 +591,11 @@ li{
         width: 70px;
     }
     .contact{
-        flex-wrap: nowrap;
-        width: 180px;
+        display: none;
+    }
+    .alt-contact-icon{
+        display: block;
+        margin-right: 10px;
     }
     .contact-item{
         font-size: 8px;
@@ -799,11 +802,11 @@ li{
         display: none;
     }
     .card, .leader-item > .card{
-        height: 190px;
+        height: 230px;
         width: 180px;
     }
     .member-item > img{
-        height: 180px;
+        height: 150px;
         width: 180px;
     }
     .position{
@@ -838,6 +841,9 @@ li{
     .header-img{
         height: 20px;
         width: 20px;
+    }
+    .card {
+        height: 200px;
     }
     .title{
         font-size: 12px;
@@ -914,7 +920,7 @@ li{
         display: none;
     }
     .leader-item > .card, .card{
-        height: 50px;
+        height: 60px;
         width: 80%;
     }
     .position{
