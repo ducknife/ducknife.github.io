@@ -73,7 +73,6 @@ ul{
 .contact{
     display: flex;
     justify-content: flex-start;
-    flex-wrap: nowrap;
     align-items: center;
     margin: 10px;
 }
