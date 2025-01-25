@@ -3,7 +3,7 @@
 }
 @font-face {
     font-family: 'Manrope';
-    src: url('/Project-3/assets/fonts/Manrope/Manrope-VariableFont_wght.ttf');
+    src: url('assets/fonts/Manrope/Manrope-VariableFont_wght.ttf');
 }
 body{
     background-color: #BC2626;
