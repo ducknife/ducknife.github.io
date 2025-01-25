@@ -798,11 +798,15 @@ li{
         line-height: 13px;
     }
     /* end about-us */
+    .section-1{
+        display: flex;
+        flex-direction: column;
+    }
     .member-info{
         display: none;
     }
     .card, .leader-item > .card{
-        height: 250px;
+        height: 260px;
         width: 180px;
     }
     .member-item > img{
