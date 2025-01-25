@@ -802,7 +802,7 @@ li{
         display: none;
     }
     .card, .leader-item > .card{
-        height: 230px;
+        height: 250px;
         width: 180px;
     }
     .member-item > img{
@@ -841,9 +841,6 @@ li{
     .header-img{
         height: 20px;
         width: 20px;
-    }
-    .card {
-        height: 200px;
     }
     .title{
         font-size: 12px;
